@@ -533,11 +533,12 @@ section {
     padding-top: 2%;
     padding-left: 2%;
 }
+
 /*media queries*/
 
 /*desktop monitors*/
 
-@media (max-width: 1024px){
+/*@media (max-width: 1024px){
 
 .first-content{
     display: flex;
@@ -550,8 +551,9 @@ section {
 }
 
 }
+*/
 /*tablets*/
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
 
     body {
     margin: 0 auto;
@@ -606,9 +608,9 @@ flex-direction: row;
 .first-content span{
     margin-right: -30%;
     margin-top:-90%;
-}
+}*/
 /*smartphones*/
-@media all and (max-media: 320px){
+/*@media all and (max-media: 320px){
 
 body{
     font-size: smaller;
@@ -626,5 +628,5 @@ body{
     width: 100%;
 }
 
-}
+}*/
 
