@@ -36,7 +36,7 @@ function cFunction(){
     error_message.innerHTML = errorText;
     return false;
   }
-
+/*
 //modal open
 document.querySelector('#finish').addEventListener("click", function() {
  document.querySelector('.container-modal').style.display = "block";
@@ -46,13 +46,47 @@ document.querySelector('#finish').addEventListener("click", function() {
 document.querySelector('.container-modal').addEventListener("click", function() {
   document.querySelector('.container-modal').style.display = "none";
 });
+*/
 
-//display on console
+// Get the modal
+var modal = document.querySelector('.container-modal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("finish");
+
+// Get the  element that closes the modal
+var close = document.querySelector('.container-modal');
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+modal.style.display = "block";
 console.log(name);
 console.log(lastName)
 console.log(checkEmail);
 console.log(phone);
 console.log(message);
 return true;
+}
+
+// Closing of  the modal
+close.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+//display on console
+/*console.log(name);
+console.log(lastName)
+console.log(checkEmail);
+console.log(phone);
+console.log(message);
+return true;*/
 
 }
