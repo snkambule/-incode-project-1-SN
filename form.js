@@ -36,21 +36,23 @@ function cFunction(){
     error_message.innerHTML = errorText;
     return false;
   }
-  //modal open
-//document.querySelector('#finish').addEventListener("click", function() {
- // document.querySelector('.container-modal').style.display = "block";
-//});
+
+//modal open
+document.querySelector('#finish').addEventListener("click", function() {
+ document.querySelector('.container-modal').style.display = "block";
+});
+
 //modal close
 document.querySelector('.container-modal').addEventListener("click", function() {
   document.querySelector('.container-modal').style.display = "none";
 });
 
-
 //display on console
-  console.log(name);
-  console.log(lastName)
-  console.log(checkEmail);
-  console.log(phone);
-  console.log(message);
-  return true;
+console.log(name);
+console.log(lastName)
+console.log(checkEmail);
+console.log(phone);
+console.log(message);
+return true;
+
 }
