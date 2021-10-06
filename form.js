@@ -55,7 +55,7 @@ var modal = document.querySelector('.container-modal');
 var btn = document.getElementById("finish");
 
 // Get the  element that closes the modal
-var close = document.querySelector('.container-modal');
+var close = document.getElementById("close");
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
