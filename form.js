@@ -1,5 +1,6 @@
 //validation
 function cFunction(){
+
   var name = document.getElementById("first-name").value;
   var lastName = document.getElementById("surname").value;
   var phone = document.getElementById("telephone").value;
@@ -16,77 +17,39 @@ function cFunction(){
     return false;
   }
 
-  else if(lastName.length < 2){
+  if(lastName.length < 2){
     errorText = "Please Enter valid Name";
     error_message.innerHTML = errorText;
     return false;
   }
-  else if(isNaN(phone) || phone.length != 10){
+  if(isNaN(phone) || phone.length != 10){
     errorText = "Please Enter valid Phone Number";
     error_message.innerHTML = errorText;
     return false;
   }
-  else if(checkEmail.indexOf("@") == -1){
+  if(checkEmail.indexOf("@") == -1){
     errorText = "Please Enter valid Email";
     error_message.innerHTML = errorText;
     return false;
   }
-  else if(message.length <= 20){
+  if(message.length <= 20){
     errorText = "Please Enter More Than 20 Characters";
     error_message.innerHTML = errorText;
     return false;
   }
-/*
-//modal open
+  //modal open
 document.querySelector('#finish').addEventListener("click", function() {
- document.querySelector('.container-modal').style.display = "block";
+  document.querySelector('.container-modal').style.display = "block";
 });
-
 //modal close
 document.querySelector('.container-modal').addEventListener("click", function() {
   document.querySelector('.container-modal').style.display = "none";
 });
-*/
-
-// Get the modal
-var modal = document.querySelector('.container-modal');
-
-// Get the button that opens the modal
-var btn = document.getElementById("finish");
-
-// Get the  element that closes the modal
-var close = document.getElementById("close");
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-modal.style.display = "block";
-console.log(name);
-console.log(lastName)
-console.log(checkEmail);
-console.log(phone);
-console.log(message);
-return true;
-}
-
-// Closing of  the modal
-close.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-
 //display on console
-/*console.log(name);
-console.log(lastName)
-console.log(checkEmail);
-console.log(phone);
-console.log(message);
-return true;*/
-
+  console.log(name);
+  console.log(lastName)
+  console.log(checkEmail);
+  console.log(phone);
+  console.log(message);
+  return true;
 }
