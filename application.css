@@ -614,6 +614,16 @@ section {
          font-size: smaller;
          margin:auto;
     }
+    .first-content {
+        display: flex;
+        flex: nowrap;
+    }
+
+    .first-content img{
+        margin-bottom: 80%;
+    }
+
+    
 
     .item-one{
          width:1vw;

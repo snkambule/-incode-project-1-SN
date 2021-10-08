@@ -1,3 +1,4 @@
+/*
 //validation
 function cFunction(){
 
@@ -53,3 +54,4 @@ document.querySelector('.container-modal').addEventListener("click", function() 
   console.log(message);
   return true;
 }
+*/
