@@ -33,8 +33,6 @@
           </nav>
        </header>
        <section>
-       <!--contact page-->
-
        <!--contact form-->
         <div class="contact-logotext">
            <img src="www/assets/logo_dark.png" alt="logo">
@@ -45,20 +43,20 @@
         
         <div id="error_message"></div>
       
-        <form action="" id="form" name="form1" onsubmit= "return false"> <!--"event.preventDefault(), cFunction();"--> 
+        <form action="" id="form" name="form1" onsubmit= "event.preventDefault(), cFunction();" >
 
          <div class="form">
            <label for="surname">Nom*</label><br><br>
-           <input id="surname" name="surname" size="50" type="text" required>
+           <input id="surname" name="surname" size="50" type="text">
            <br><br>
            <label for="first-name">Prénom*</label><br><br>
-           <input id="first-name" name="first-name" size="50" type="text" required>
+           <input id="first-name" name="first-name" size="50" type="text">
            <br><br>
            <label for="telephone">Téléphone</label><br><br>
            <input id="telephone" name="telephone" size="50" type="tel" placeholder="10 digits in this format e.g 1555555555">
            <br><br>
            <label for="mail">Adresse mail*</label><br><br>
-           <input id="mail" name="mail" size="50" type="text" required>
+           <input id="mail" name="mail" size="50" type="text">
            <br><br>
            <label for="message">Message*</label><br><br>
            <textarea id="message" name="message" rows="6" cols="48" placeholder="Tapez votre message ici" required></textarea>

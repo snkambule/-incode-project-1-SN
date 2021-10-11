@@ -1,4 +1,4 @@
-/*
+
 //validation
 function cFunction(){
 
@@ -46,6 +46,9 @@ document.querySelector('#finish').addEventListener("click", function() {
 document.querySelector('.container-modal').addEventListener("click", function() {
   document.querySelector('.container-modal').style.display = "none";
 });
+//modal close outside
+
+
 //display on console
   console.log(name);
   console.log(lastName)
@@ -54,4 +57,3 @@ document.querySelector('.container-modal').addEventListener("click", function() 
   console.log(message);
   return true;
 }
-*/
